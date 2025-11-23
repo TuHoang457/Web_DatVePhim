@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rạp Phim ATUZZ Cinema</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 RẠP PHIM ATUZZ CINEMA 🎞️</h1>
+    <nav>
+      <ul>
+        <li><a href="#phim">Phim</a></li>
+        <li><a href="#datve">Đặt vé</a></li>
+        <li><a href="#lienhe">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="phim" class="banner">
+    <h2>Phim Hot Hiện Nay</h2>
+    <div class="movie-list">
+      <div class="movie">
+        <img src="QAT.jpg" alt="Tee Yod: Qủy Ăn Tạng 3">
+        <h3>Tee Yod: Qủy Ăn Tạng 3</h3>
+      </div>
+      <div class="movie">
+        <img src="TAG1VS.jpg" alt="Tay Anh Giữ Một Vì Sao">
+        <h3>Tay Anh Giữ Một Vì Sao</h3>
+      </div>
+      <div class="movie">
+        <img src="TCTK.jpg" alt="Tử Chiến Trên Không">
+        <h3>Tử Chiến Trên Không</h3>
+      </div>
+      <div class="movie">
+        <img src="TCJR.jpg" alt="The Conjuring: Nghi Lễ Cuối Cùng">
+        <h3>The Conjuring: Nghi Lễ Cuối Cùng</h3>
+      </div>
+      <div class="movie">
+        <img src="GVT.jpg" alt="Gió Vẫn Thổi">
+        <h3>Gió Vẫn Thổi</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="datve" class="booking">
+    <h2>Đặt Vé Ngay</h2>
+    <form target="_blank" action="datvethanhcong.html" method="get">
+      <label for="ten">Họ tên:</label>
+      <input type="text" id="ten" placeholder="Nhập họ tên..." required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Nhập email nhận vé..." required>
+
+      <label for="chonphim">Chọn phim:</label>
+      <select id="chonphim" required>
+        <option value="">-- Chọn phim --</option>
+        <option>Tee Yod: Qủy Ăn Tạng 3 — 90.000đ</option>
+        <option>Tay Anh Giữ Một Vì Sao — 85.000đ</option>
+        <option>Tử Chiến Trên Không — 80.000đ</option>
+        <option>The Conjuring: Nghi Lễ Cuối Cùng — 95.000đ</option>
+        <option>Gió Vẫn Thổi — 75.000đ</option>
+      </select>
+
+      <p style="color:#00ffff; font-weight:bold; margin-top:10px;">
+        💸 Giá vé sẽ hiển thị kèm trong danh sách phim
+      </p>
+
+      <label style="margin-top:15px;">Combo thêm:</label>
+      <div style="color:#fff; margin-bottom:10px;">
+        <label><input type="checkbox"> Combo Bắp + Nước (+30.000đ)</label>
+      </div>
+
+      <label for="ngay">Ngày xem:</label>
+      <input type="date" id="ngay" required>
+
+      <label for="gio">Giờ chiếu:</label>
+      <select id="gio" required>
+        <option value="">-- Chọn giờ chiếu --</option>
+        <option>10:00</option>
+        <option>13:30</option>
+        <option>16:00</option>
+        <option>19:00</option>
+        <option>21:30</option>
+      </select>
+
+    <label>Chọn ghế:</label>
+      <div class="seat-grid">
+        <!-- Hàng A -->
+        <label><input type="checkbox">A1</label>
+        <label><input type="checkbox">A2</label>
+        <label><input type="checkbox">A3</label>
+        <label><input type="checkbox">A4</label>
+        <label><input type="checkbox">A5</label>
+        <label><input type="checkbox">A6</label>
+        <label><input type="checkbox">A7</label>
+        <label><input type="checkbox">A8</label>
+        <label><input type="checkbox">A9</label>
+        <label><input type="checkbox">A10</label>
+        <!-- Hàng B -->
+        <label><input type="checkbox">B1</label>
+        <label><input type="checkbox">B2</label>
+        <label><input type="checkbox">B3</label>
+        <label><input type="checkbox">B4</label>
+        <label><input type="checkbox">B5</label>
+        <label><input type="checkbox">B6</label>
+        <label><input type="checkbox">B7</label>
+        <label><input type="checkbox">B8</label>
+        <label><input type="checkbox">B9</label>
+        <label><input type="checkbox">B10</label>
+        <!-- Hàng C -->
+        <label><input type="checkbox">C1</label>
+        <label><input type="checkbox">C2</label>
+        <label><input type="checkbox">C3</label>
+        <label><input type="checkbox">C4</label>
+        <label><input type="checkbox">C5</label>
+        <label><input type="checkbox">C6</label>
+        <label><input type="checkbox">C7</label>
+        <label><input type="checkbox">C8</label>
+        <label><input type="checkbox">C9</label>
+        <label><input type="checkbox">C10</label>
+        <!-- Hàng D -->
+        <label><input type="checkbox">D1</label>
+        <label><input type="checkbox">D2</label>
+        <label><input type="checkbox">D3</label>
+        <label><input type="checkbox">D4</label>
+        <label><input type="checkbox">D5</label>
+        <label><input type="checkbox">D6</label>
+        <label><input type="checkbox">D7</label>
+        <label><input type="checkbox">D8</label>
+        <label><input type="checkbox">D9</label>
+        <label><input type="checkbox">D10</label>
+        <!-- Hàng E -->
+        <label><input type="checkbox">E1</label>
+        <label><input type="checkbox">E2</label>
+        <label><input type="checkbox">E3</label>
+        <label><input type="checkbox">E4</label>
+        <label><input type="checkbox">E5</label>
+        <label><input type="checkbox">E6</label>
+        <label><input type="checkbox">E7</label>
+        <label><input type="checkbox">E8</label>
+        <label><input type="checkbox">E9</label>
+        <label><input type="checkbox">E10</label>
+        <!-- Hàng G -->
+        <label><input type="checkbox">G1</label>
+        <label><input type="checkbox">G2</label>
+        <label><input type="checkbox">G3</label>
+        <label><input type="checkbox">G4</label>
+        <label><input type="checkbox">G5</label>
+        <label><input type="checkbox">G6</label>
+        <label><input type="checkbox">G7</label>
+        <label><input type="checkbox">G8</label>
+        <label><input type="checkbox">G9</label>
+        <label><input type="checkbox">G10</label>
+        <!-- Hàng H -->
+        <label><input type="checkbox">H1</label>
+        <label><input type="checkbox">H2</label>
+        <label><input type="checkbox">H3</label>
+        <label><input type="checkbox">H4</label>
+        <label><input type="checkbox">H5</label>
+        <label><input type="checkbox">H6</label>
+        <label><input type="checkbox">H7</label>
+        <label><input type="checkbox">H8</label>
+        <label><input type="checkbox">H9</label>
+        <label><input type="checkbox">H10</label>
+        <!-- Hàng I -->
+        <label><input type="checkbox">I1</label>
+        <label><input type="checkbox">I2</label>
+        <label><input type="checkbox">I3</label>
+        <label><input type="checkbox">I4</label>
+        <label><input type="checkbox">I5</label>
+        <label><input type="checkbox">I6</label>
+        <label><input type="checkbox">I7</label>
+        <label><input type="checkbox">I8</label>
+        <label><input type="checkbox">I9</label>
+        <label><input type="checkbox">I10</label>
+        <!-- Hàng K -->
+        <label><input type="checkbox">K1</label>
+        <label><input type="checkbox">K2</label>
+        <label><input type="checkbox">K3</label>
+        <label><input type="checkbox">K4</label>
+        <label><input type="checkbox">K5</label>
+        <label><input type="checkbox">K6</label>
+        <label><input type="checkbox">K7</label>
+        <label><input type="checkbox">K8</label>
+        <label><input type="checkbox">K9</label>
+        <label><input type="checkbox">K10</label>
+        <!-- Hàng L -->
+        <label><input type="checkbox">L1</label>
+        <label><input type="checkbox">L2</label>
+        <label><input type="checkbox">L3</label>
+        <label><input type="checkbox">L4</label>
+        <label><input type="checkbox">L5</label>
+        <label><input type="checkbox">L6</label>
+        <label><input type="checkbox">L7</label>
+        <label><input type="checkbox">L8</label>
+        <label><input type="checkbox">L9</label>
+        <label><input type="checkbox">L10</label>
+      </div>
+
+      <button type="submit">🎦 Đặt vé</button>
+
+      <div style="text-align:center; margin-top:20px;">
+        <h3>Quét mã để thanh toán 💳</h3>
+        <img src="QR.jpg" alt="QR Thanh Toán" style="width:220px; border-radius:10px; margin:10px auto;">
+        <div style="margin-top:15px; color:#fff; font-size:15px; line-height:1.6;">
+          <p><strong>Người nhận:</strong> Hoàng Anh Tú</p>
+          <p><strong>Ngân hàng:</strong> Techcombank</p>
+          <p><strong>Số tài khoản:</strong> 10040052007</p>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <footer id="lienhe">
+    <p>📍 Liên hệ: Rạp ATUZZ Cinema | ☎️ 0867 762 042 | 📧 tudeptrai921@gmail.com</p>
+  </footer>
+</body>
+</html>

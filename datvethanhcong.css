@@ -1,0 +1,59 @@
+body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center;       
+      background-color: black;
+      text-align: center;
+      background: radial-gradient(circle at center, #111 40%, #000);
+      color: #fff;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+.thongbao {
+      color: red;
+      font-size: 50px;
+      text-align: center;
+      line-height: 1.8;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+.success-box {
+      margin-top: 150px;
+      padding: 40px;
+      background: #1a1a1a;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 0 30px #ff0066;
+    }
+
+.success-box h1 {
+      color: #ffcc00;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+.success-box p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+.success-box a {
+      display: inline-block;
+      margin-top: 20px;
+      background: linear-gradient(90deg, #ff0066, #ff8c00);
+      color: white;
+      text-decoration: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+.success-box a:hover {
+      background: linear-gradient(90deg, #ff8c00, #ff0066);
+      box-shadow: 0 0 15px #ff8c00;
+    }
+
